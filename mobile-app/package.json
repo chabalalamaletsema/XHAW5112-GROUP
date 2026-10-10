@@ -1,0 +1,21 @@
+{
+  "name": "nxt-level-gaming-escape-app",
+  "version": "1.0.0",
+  "description": "NXT LEVEL GAMING ESCAPE - React Native Expo mobile app (XHAW5112 University Project)",
+  "main": "App.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "~51.0.0",
+    "react": "18.2.0",
+    "react-native": "0.74.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}
