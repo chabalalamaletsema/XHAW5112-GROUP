@@ -240,11 +240,11 @@ nxt-level-gaming-escape/
 
 | Role | Name | Student Number |
 |------|------|---------------|
-| Frontend Developer | _[Your Name]_ | _[Student No.]_ |
-| UI/UX Designer | _[Your Name]_ | _[Student No.]_ |
-| Mobile Developer | _[Your Name]_ | _[Student No.]_ |
-| QA / Tester | _[Your Name]_ | _[Student No.]_ |
-| Project Manager | _[Your Name]_ | _[Student No.]_ |
+| Frontend Developer | MZWAKHE MKWANAZI| ST10511465 |
+| UI/UX Designer | ZWAKHELE PANZA | ST10539588 |
+| Mobile Developer | MZWAKHE MKHWANAZI | ST10511465 |
+| QA / Tester | MZWAKHE MKHWANAZI | ST10511465 |
+| Project Manager | MASEGO MATLALA | ST10523393 |
 
 ---
 
