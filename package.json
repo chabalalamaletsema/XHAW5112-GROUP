@@ -1,0 +1,12 @@
+{
+  "name": "nxt-level-gaming-escape",
+  "version": "1.0.0",
+  "description": "NXT LEVEL GAMING ESCAPE - XHAW5112 University Project. Premier gaming lounge & esports arena.",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "npx serve ."
+  },
+  "keywords": ["gaming", "esports", "booking", "xhaw5112"],
+  "author": "NXT LEVEL GAMING ESCAPE",
+  "license": "MIT"
+}

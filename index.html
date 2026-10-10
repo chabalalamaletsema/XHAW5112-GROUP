@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NXT LEVEL GAMING ESCAPE - Premier gaming lounge and esports arena in South Africa. Book your ultimate gaming experience." />
+  <title>NXT LEVEL GAMING ESCAPE | Enter the Game. Escape Reality.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/jpeg" href="assets/cca9db6c916aa31fb3c0133dbae49526.jpg" />
+  <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <img src="assets/cca9db6c916aa31fb3c0133dbae49526.jpg" alt="NXT LEVEL GAMING ESCAPE logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-nxt">NXT LEVEL</span>
+          <span class="logo-sub">GAMING ESCAPE</span>
+        </div>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#packages">PACKAGES</a></li>
+          <li><a href="#arena">ARENA</a></li>
+          <li><a href="#booking">BOOK NOW</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <button class="btn-orange btn-book-nav" onclick="scrollToSection('booking')">BOOK NOW</button>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-hex"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Enter the <span class="cyan-highlight">Game</span>.<br/>Escape Reality.</h1>
+      <p class="hero-subtitle">South Africa's premier esports arena, VR lounge, and gaming destination.<br/>Full-day LAN events, competitive tournaments, and immersive VR adventures.</p>
+      <div class="hero-buttons">
+        <button class="btn-orange btn-lg" onclick="scrollToSection('packages')">Explore Packages &rarr;</button>
+        <button class="btn-outline-cyan btn-lg" onclick="openTrailer()">Watch Trailer</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PACKAGES ===== -->
+  <section id="packages" class="section">
+    <div class="section-header">
+      <h2 class="section-title">GAMING PACKAGES</h2>
+      <p class="section-desc">Choose your experience. Mix and match for automatic booking discounts.</p>
+    </div>
+    <div class="packages-grid" id="packagesGrid">
+      <!-- Cards injected by script.js -->
+    </div>
+  </section>
+
+  <!-- ===== ARENA ===== -->
+  <section id="arena" class="section section-alt">
+    <div class="section-header">
+      <h2 class="section-title">THE ARENA</h2>
+      <p class="section-desc">State-of-the-art equipment. Professional-grade setup. Built for glory.</p>
+    </div>
+    <div class="arena-grid">
+      <div class="arena-card">
+        <div class="arena-icon">&#127918;</div>
+        <h3>PC &amp; Console Stations</h3>
+        <p>15 high-performance rigs with RTX graphics, 240Hz monitors, and latest-gen consoles.</p>
+      </div>
+      <div class="arena-card">
+        <div class="arena-icon">&#129503;</div>
+        <h3>VR Arena</h3>
+        <p>Dedicated free-roam VR space with HTC Vive Pro 2 and Oculus Quest 3 headsets.</p>
+      </div>
+      <div class="arena-card">
+        <div class="arena-icon">&#127909;</div>
+        <h3>Streaming Studio</h3>
+        <p>Pro broadcast setup with multi-cam, green screen, OBS overlays, and Shure mic.</p>
+      </div>
+      <div class="arena-card">
+        <div class="arena-icon">&#127942;</div>
+        <h3>Tournament Stage</h3>
+        <p>Competition-ready stage with spectator screens, caster desk, and live leaderboard.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING / QUOTATION ===== -->
+  <section id="booking" class="section">
+    <div class="section-header">
+      <h2 class="section-title">YOUR BOOKING &amp; QUOTATION</h2>
+      <p class="section-desc">Add packages above to build your booking. Discounts apply automatically.</p>
+    </div>
+    <div class="booking-container">
+      <div class="booking-list-wrap">
+        <h3 class="booking-subtitle">Selected Packages</h3>
+        <div id="bookingList" class="booking-list">
+          <div class="booking-empty" id="bookingEmpty">
+            <p>No packages selected yet.</p>
+            <p class="booking-empty-hint">Browse the packages above and click <strong>+ Add to Booking</strong>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="quotation-box" id="quotationBox">
+        <h3 class="quotation-title">QUOTATION SUMMARY</h3>
+
+        <div class="quote-row">
+          <span class="quote-label">Subtotal</span>
+          <span class="quote-value" id="quoteSubtotal">R 0</span>
+        </div>
+        <div class="quote-row">
+          <span class="quote-label">Bookings Count</span>
+          <span class="quote-value" id="quoteCount">0</span>
+        </div>
+        <div class="quote-row">
+          <span class="quote-label">Discount Rate</span>
+          <span class="quote-value" id="quoteDiscountRate">0%</span>
+        </div>
+        <div class="quote-row">
+          <span class="quote-label">Discount Amount</span>
+          <span class="quote-value quote-discount" id="quoteDiscountAmount">R 0</span>
+        </div>
+
+        <div class="quote-divider"></div>
+
+        <div class="quote-row quote-total-row">
+          <span class="quote-total-label">TOTAL QUOTE</span>
+          <span class="quote-total" id="quoteTotal">R 0</span>
+        </div>
+
+        <div class="discount-rule" id="discountRule">
+          <strong>Discount Rule:</strong><br/>
+          1 booking = 0% off &middot; 2 bookings = 5% off<br/>
+          3 bookings = 10% off &middot; 4+ bookings = 15% off
+        </div>
+
+        <button class="btn-orange btn-lg btn-request" onclick="requestBooking()" id="btnRequest">REQUEST BOOKING</button>
+
+        <div class="confirmation-msg" id="confirmationMsg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="section-header">
+      <h2 class="section-title">CONTACT US</h2>
+      <p class="section-desc">Ready to level up? Reach out and book your escape.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Location</h3>
+        <p>123 Gaming Boulevard<br/>Johannesburg, South Africa<br/>2000</p>
+      </div>
+      <div class="contact-card">
+        <h3>Hours</h3>
+        <p>Mon - Thu: 10:00 - 22:00<br/>Fri - Sat: 10:00 - 00:00<br/>Sun: 12:00 - 20:00</p>
+      </div>
+      <div class="contact-card">
+        <h3>Reach Us</h3>
+        <p>Phone: +27 11 123 4567<br/>Email: info@nxtlevelgaming.co.za<br/>Discord: NXT LEVEL Community</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <img src="assets/cca9db6c916aa31fb3c0133dbae49526.jpg" alt="NXT LEVEL GAMING ESCAPE logo" class="logo-img footer-logo" />
+        <span>NXT LEVEL GAMING ESCAPE</span>
+      </div>
+      <p class="footer-copy">&copy; 2024 NXT LEVEL GAMING ESCAPE &middot; XHAW5112 University Project</p>
+    </div>
+  </footer>
+
+  <!-- ===== TRAILER MODAL ===== -->
+  <div class="modal-overlay" id="trailerModal" onclick="closeTrailer()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeTrailer()">&times;</button>
+      <h3>NXT LEVEL GAMING ESCAPE - Trailer</h3>
+      <div class="trailer-placeholder">
+        <p>Trailer video coming soon.</p>
+        <p class="trailer-sub">Imagine: neon lights, epic gameplay, and the roar of the crowd.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
