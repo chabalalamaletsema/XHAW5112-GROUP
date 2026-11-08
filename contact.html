@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact details, message form, social links and map for Next Level Gaming & Esports Arena." />
+  <title>Contact Us | Next Level Gaming &amp; Esports Arena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body data-page="contact">
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <a class="logo-wrap" href="index.html" aria-label="Next Level Gaming home">
+        <img src="assets/logo.png" alt="Next Level Gaming logo" class="logo-img" />
+        <span class="logo-text"><span class="logo-main">NEXT LEVEL</span><span class="logo-sub">GAMING &amp; ESPORTS</span></span>
+      </a>
+      <nav id="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="packages.html">PACKAGES</a></li>
+          <li><a href="calculate.html">CALCULATE FEES</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">CONTACT</a></li>
+        </ul>
+      </nav>
+      <a class="cart-link" href="calculate.html" aria-label="Your booking"><span aria-hidden="true">&#128722;</span><span class="label">BOOKING</span><span class="cart-count" id="cartCount">0</span></a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+  <div class="page-banner"><h1>Contact Us</h1><p>We'd love to hear from you</p></div>
+
+    <section class="section">
+      <div class="two-col" style="align-items:start">
+        <div>
+          <div class="section-header"><h2 class="section-title">GET IN TOUCH</h2></div>
+          <div class="card">
+            <ul class="contact-list">
+              <li><span class="icon">&#128222;</span><a href="tel:+27111234567">+27 11 123 4567</a></li>
+              <li><span class="icon">&#9993;&#65039;</span><a href="mailto:info@nextlevelgaming.co.za">info@nextlevelgaming.co.za</a></li>
+              <li><span class="icon">&#128205;</span><span>123 Gaming Lane, Johannesburg, 2000</span></li>
+              <li><span class="icon">&#128344;</span><span>Mon - Sun: 9:00 - 22:00</span></li>
+            </ul>
+          </div>
+          <h3 style="margin:26px 0 12px;color:var(--grey);font-size:.8rem;letter-spacing:2px">FOLLOW US</h3>
+          <div class="socials">
+            <a class="social" href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+            <a class="social" href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a class="social" href="https://www.x.com" target="_blank" rel="noopener">X</a>
+          </div>
+        </div>
+        <div>
+          <div class="section-header"><h2 class="section-title">SEND US A MESSAGE</h2></div>
+          <form id="contactForm" class="card" novalidate>
+            <div class="field"><label for="cName">NAME *</label><input id="cName" type="text" autocomplete="name" /><p class="error" id="cNameError"></p></div>
+            <div class="field"><label for="cEmail">EMAIL *</label><input id="cEmail" type="email" autocomplete="email" /><p class="error" id="cEmailError"></p></div>
+            <div class="field"><label for="cPhone">PHONE (OPTIONAL)</label><input id="cPhone" type="tel" autocomplete="tel" /><p class="error" id="cPhoneError"></p></div>
+            <div class="field"><label for="cSubject">SUBJECT *</label><input id="cSubject" type="text" /><p class="error" id="cSubjectError"></p></div>
+            <div class="field"><label for="cMessage">MESSAGE *</label><textarea id="cMessage"></textarea><p class="error" id="cMessageError"></p></div>
+            <button class="btn btn-primary btn-block" type="submit">SEND MESSAGE</button>
+            <div id="contactNotice" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="section-header"><h2 class="section-title">FIND US</h2></div>
+      <iframe class="map-frame" title="Map showing Next Level Gaming Arena in Johannesburg" loading="lazy"
+        src="https://www.google.com/maps?q=123+Gaming+Lane+Johannesburg+2000&amp;output=embed"></iframe>
+      <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&amp;query=123+Gaming+Lane+Johannesburg+2000" target="_blank" rel="noopener">Open in Google Maps &rarr;</a></p>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand"><img src="assets/logo.png" alt="" class="logo-img" /><span>NEXT LEVEL GAMING &amp; ESPORTS ARENA</span></div>
+        <p style="margin-top:12px;font-size:.88rem">Play. Compete. Connect.<br/>123 Gaming Lane, Johannesburg, 2000<br/>Mon - Sun: 9:00 - 22:00</p>
+      </div>
+      <div>
+        <h4>EXPLORE</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="packages.html">Packages</a></li>
+          <li><a href="calculate.html">Calculate Fees</a></li><li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>FOLLOW US</h4>
+        <div class="socials">
+          <a class="social" href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+          <a class="social" href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a class="social" href="https://www.x.com" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Next Level Gaming &amp; Esports Arena &middot; XHAW5112 Work Integrated Learning</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
