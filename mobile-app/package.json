@@ -1,0 +1,25 @@
+{
+  "name": "next-level-gaming-app",
+  "version": "1.0.0",
+  "description": "NEXT LEVEL GAMING & ESPORTS ARENA - React Native Expo mobile app (XHAW5112 Task 2 Phase 2)",
+  "main": "App.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "~51.0.0",
+    "react": "18.2.0",
+    "react-native": "0.74.1",
+    "react-dom": "18.2.0",
+    "react-native-web": "~0.19.10",
+    "@expo/metro-runtime": "~3.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "babel-preset-expo": "^11.0.0"
+  },
+  "private": true
+}
