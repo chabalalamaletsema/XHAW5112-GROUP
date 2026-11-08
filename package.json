@@ -1,0 +1,17 @@
+{
+  "name": "next-level-gaming-website",
+  "version": "1.0.0",
+  "description": "NEXT LEVEL GAMING & ESPORTS ARENA - multi-page website (XHAW5112 Task 2 Phase 1)",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "gaming",
+    "esports",
+    "booking",
+    "xhaw5112"
+  ],
+  "author": "NXT LEVEL GAMING ESCAPE",
+  "license": "MIT"
+}

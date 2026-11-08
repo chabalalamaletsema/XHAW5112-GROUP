@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Next Level Gaming & Esports Arena in Johannesburg. Explore gaming packages, calculate fees and request a booking." />
+  <title>Home | Next Level Gaming &amp; Esports Arena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body data-page="home">
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <a class="logo-wrap" href="index.html" aria-label="Next Level Gaming home">
+        <img src="assets/logo.png" alt="Next Level Gaming logo" class="logo-img" />
+        <span class="logo-text"><span class="logo-main">NEXT LEVEL</span><span class="logo-sub">GAMING &amp; ESPORTS</span></span>
+      </a>
+      <nav id="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="packages.html">PACKAGES</a></li>
+          <li><a href="calculate.html">CALCULATE FEES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <a class="cart-link" href="calculate.html" aria-label="Your booking"><span aria-hidden="true">&#128722;</span><span class="label">BOOKING</span><span class="cart-count" id="cartCount">0</span></a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="motto">PLAY. COMPETE. CONNECT.</div>
+          <h1>Next Level Gaming &amp; <span>Esports Arena</span></h1>
+          <p>Johannesburg's premier gaming arena: full-day LAN events, competitive tournaments and immersive VR adventures for gamers, families, schools and companies.</p>
+          <div class="btn-row" style="max-width:460px">
+            <a class="btn btn-primary" href="calculate.html">BOOK NOW</a>
+            <a class="btn btn-outline" href="packages.html">VIEW PACKAGES</a>
+          </div>
+        </div>
+        <img class="hero-logo" src="assets/logo.png" alt="Next Level Gaming logo" />
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">FEATURED PACKAGES</h2>
+        <p class="section-desc">Pick your experience. Mix and match for automatic booking discounts.</p>
+      </div>
+      <div class="grid" id="featuredGrid"></div>
+      <p style="margin-top:24px"><a class="btn btn-outline" href="packages.html">SEE ALL PACKAGES &rarr;</a></p>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="section-header"><h2 class="section-title">WHAT OUR PLAYERS SAY</h2></div>
+      <div class="grid">
+        <div class="card"><p class="quote-text">&ldquo;Amazing experience! Best gaming arena ever!&rdquo;</p><p class="quote-by">&mdash; Thabo</p></div>
+        <div class="card"><p class="quote-text">&ldquo;Great setup and friendly staff.&rdquo;</p><p class="quote-by">&mdash; Lerato</p></div>
+        <div class="card"><p class="quote-text">&ldquo;100% recommend! Will be back soon.&rdquo;</p><p class="quote-by">&mdash; Sipho</p></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand"><img src="assets/logo.png" alt="" class="logo-img" /><span>NEXT LEVEL GAMING &amp; ESPORTS ARENA</span></div>
+        <p style="margin-top:12px;font-size:.88rem">Play. Compete. Connect.<br/>123 Gaming Lane, Johannesburg, 2000<br/>Mon - Sun: 9:00 - 22:00</p>
+      </div>
+      <div>
+        <h4>EXPLORE</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="packages.html">Packages</a></li>
+          <li><a href="calculate.html">Calculate Fees</a></li><li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>FOLLOW US</h4>
+        <div class="socials">
+          <a class="social" href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+          <a class="social" href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a class="social" href="https://www.x.com" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Next Level Gaming &amp; Esports Arena &middot; XHAW5112 Work Integrated Learning</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
