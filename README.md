@@ -316,9 +316,3 @@ nxt-level-gaming-escape/
 | QA / Tester | MZWAKHE MKHWANAZI | ST10511465 |
 | Project Manager | MASEGO MATLALA | ST10523393 |
 
----
-
-## License
-
-This project is created for academic purposes as part of the XHAW5112 module at the University of South Africa (UNISA). © 2024 NXT LEVEL GAMING ESCAPE.
->>>>>>> c1f3f9865c987b8961c8b1063dc54a45e27153c3
