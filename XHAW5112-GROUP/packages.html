@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Compare gaming packages and individual experiences at Next Level Gaming & Esports Arena." />
+  <title>Packages | Next Level Gaming &amp; Esports Arena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+</head>
+<body data-page="packages">
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-inner">
+      <a class="logo-wrap" href="index.html" aria-label="Next Level Gaming home">
+        <img src="assets/logo.png" alt="Next Level Gaming logo" class="logo-img" />
+        <span class="logo-text"><span class="logo-main">NEXT LEVEL</span><span class="logo-sub">GAMING &amp; ESPORTS</span></span>
+      </a>
+      <nav id="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="packages.html" class="active" aria-current="page">PACKAGES</a></li>
+          <li><a href="calculate.html">CALCULATE FEES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <a class="cart-link" href="calculate.html" aria-label="Your booking"><span aria-hidden="true">&#128722;</span><span class="label">BOOKING</span><span class="cart-count" id="cartCount">0</span></a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+  <div class="page-banner"><h1>Packages</h1><p>Gaming packages &amp; individual experiences</p></div>
+
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">GAMING PACKAGES</h2>
+        <p class="section-desc">Choose the perfect experience for you. <strong id="selectedInfo" style="color:var(--cyan)">0 selected</strong></p>
+      </div>
+      <div class="toolbar">
+        <label for="filterType">SHOW
+          <select id="filterType"><option value="all">All experiences</option><option value="package">Packages</option><option value="individual">Individual experiences</option></select>
+        </label>
+        <label for="sortBy">SORT BY
+          <select id="sortBy"><option value="default">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="rating">Top rated</option></select>
+        </label>
+      </div>
+      <div class="grid" id="packagesGrid"></div>
+
+      <h2 class="section-title" style="margin-top:56px;font-size:1.3rem">QUICK COMPARISON</h2>
+      <div class="card table-wrap" style="margin-top:20px;padding:0">
+        <table>
+          <thead><tr><th>NAME</th><th>TYPE</th><th>DURATION</th><th class="num">PRICE</th></tr></thead>
+          <tbody id="compareBody"></tbody>
+        </table>
+      </div>
+      <p style="margin-top:28px"><a class="btn btn-primary" href="calculate.html">CALCULATE FEES</a></p>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand"><img src="assets/logo.png" alt="" class="logo-img" /><span>NEXT LEVEL GAMING &amp; ESPORTS ARENA</span></div>
+        <p style="margin-top:12px;font-size:.88rem">Play. Compete. Connect.<br/>123 Gaming Lane, Johannesburg, 2000<br/>Mon - Sun: 9:00 - 22:00</p>
+      </div>
+      <div>
+        <h4>EXPLORE</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="packages.html">Packages</a></li>
+          <li><a href="calculate.html">Calculate Fees</a></li><li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>FOLLOW US</h4>
+        <div class="socials">
+          <a class="social" href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+          <a class="social" href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a class="social" href="https://www.x.com" target="_blank" rel="noopener">X</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Next Level Gaming &amp; Esports Arena &middot; XHAW5112 Work Integrated Learning</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
