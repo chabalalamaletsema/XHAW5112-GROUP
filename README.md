@@ -136,12 +136,12 @@ This project demonstrates the roles within a software development team:
 
 ### MO02 — UX Design
 - **Color scheme** (matched to the supplied monochrome logo):
-  - Background: `#0B0B0B` (near-black)
-  - Header/Footer: `#000000` (black)
-  - Card/secondary surface: `#171717` (graphite)
-  - CTA/Prices: `#FFFFFF` (white)
-  - Borders/Highlights: `#D9D9D9` (silver)
-  - Text: `#FFFFFF` (white)
+  - Background: #0B0B0B (near-black)
+  - Header/Footer: #000000 (black)
+  - Card/secondary surface: #171717 (graphite)
+  - CTA/Prices: #FFFFFF (white)
+  - Borders/Highlights: #D9D9D9 (silver)
+  - Text: #FFFFFF (white)
 - **Typography**: Montserrat Bold — futuristic gaming aesthetic
 - **Logo**: Supplied black-and-white silhouette image used across the website branding
 - **Visual style**: Honeycomb hex pattern background, restrained silver glow effects, and card-based layout
@@ -167,9 +167,9 @@ The quotation display shows:
 - Total quote (in large silver font)
 
 This logic is implemented identically in three places:
-1. `script.js` — `getDiscountRate()` + `calculateQuote()` (website)
-2. `mobile-app/App.js` — `getDiscountRate()` + `calculateQuote()` (React Native)
-3. `mobile-app/MainActivity.kt` — `getDiscountRate()` + `calculateQuote()` (Kotlin)
+1. `script.js` - `getDiscountRate()` + `calculateQuote()` (website)
+2. `mobile-app/App.js` - `getDiscountRate()` + `calculateQuote()` (React Native)
+3. `mobile-app/MainActivity.kt` - `getDiscountRate()` + `calculateQuote()` (Kotlin)
 
 **Testing scenarios:**
 - Add 1 package → 0% discount, total = subtotal
